@@ -434,7 +434,7 @@ h1 {
 
     .content-body-footer {
         position: relative;
-        bottom: 3px;
+        top: 10px;
         height: 85px;
         width: 100%;
         background: rgb(53, 53, 53);
@@ -443,45 +443,45 @@ h1 {
     }
 
     .list-options-1 {
+        position: relative;
+        right: 3.5px;
         list-style-type: none;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 553px;
     }
 
     .language-options-list {
         position: relative;
-        right: 31px;
         bottom: 5px;
+        right: 195px;
+        width: 1100px;
     }
 
-    .language-option {
-        border-right: 1px solid rgb(68, 68, 68);
-        width: 100%;
-    }
-
-
-    .white-tags-1 {
+    .white-tags {
         text-decoration-line: none;
         color: white;
-        display: inline-block;
-        width: 100px;
-        margin-right: 10px;
-        margin-left: 10px;
-        font-size: 10.25px;
-        font-weight: 600;
-    }
-
-    .white-tags-2 {
-        text-decoration-line: none;
-        color: white;
-        margin-right: 10px;
-        margin-left: 10px;
-        font-size: 10.25px;
+        margin-right: 13px;
+        margin-left: 13px;
+        font-size: 11px;
         font-weight: 600;
     }
 
     .white-tags:hover {
+        text-decoration-line: underline;
+    }
+
+    .gray-tags {
+        text-decoration-line: none;
+        color: rgb(175, 175, 175);
+        margin-right: 13px;
+        margin-left: 13px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .gray-tags:hover {
         text-decoration-line: underline;
     }
 
@@ -531,8 +531,29 @@ h1 {
         height: 740px;
         width: 100%;
         border-radius: 16px;
-        background: linear-gradient(to right, red, yellow);
+        overflow: hidden;
+        display: inline-block;
+        /* background: linear-gradient(to right, red, yellow);
+        animation: rot-gradient 5s linear infinite; */
+    }
 
+    .spacial-audio {
+        position: relative;
+        bottom: 50%;
+        height: 200%;
+        width: 100%;
+        background: linear-gradient(to right, red, yellow);
+        /* animation: rot-gradient 5s linear infinite; */
+    }
+
+    @keyframes rot-gradient {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
     }
 
     .spacial-audio-cover {
@@ -551,8 +572,16 @@ h1 {
         }
     }
 
+    .spacial-audio-container:active {
+        position: relative;
+        right: 5px;
+        top: 5px;
+        box-shadow: none;
+    }
+
     .footer-parts {
         height: 100%;
+        width: 50%;
     }
 
     .footer-part-1 {
@@ -563,11 +592,43 @@ h1 {
 
     .footer-part-2 {
         display: flex;
-        justify-content: end;
-        width: 65
+        justify-content: start;
+        width: 65%;
     }
 
+    .copyright-text {
+        font-size: 11px;
+        font-weight: 500;
+        color: rgb(160, 160, 160);
+    }
+
+    .apple-music-link {
+        text-decoration-line: none;
+        color: white;
+        width: 100px;
+        font-size: 10.25px;
+        font-weight: 600;
+    }
+
+    .apple-music-link:hover {
+        text-decoration-line: underline;
+    }
+
+    .copyright-container {
+        position: relative;
+        left: 49px;
+        top: 13px;
+    }
+
+    .divider {
+        position: relative;
+        top: 3px;
+        height: 10px;
+        border-right: 1px solid rgb(66, 66, 66);
+    }
 }
+
+
 
 @media screen and (width <775px) {
     .sidebar {

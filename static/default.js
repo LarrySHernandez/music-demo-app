@@ -5,7 +5,7 @@ const volumeInput = document.getElementById('topbar-volume-input');
 
 for (let link of links) {
     link.addEventListener('click', function (e) {
-        if (!link.classList.contains('logo-link')) {
+        if (!link.classList.contains('logo-link') && !link.classList.contains('apple-music-link')) {
             e.preventDefault();
         }
     })
