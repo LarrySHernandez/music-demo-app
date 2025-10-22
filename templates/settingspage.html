@@ -1,52 +1,19 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
-{%block header%}<title>HomePage</title>{%endblock%}
+{% block header %}
+<link rel="stylesheet" href="../static/settings.css">
+<title>settings-page</title>
+{% endblock%}
 
-{%block content%}
+{% block content%}
 <div class="content-body-container">
     <div class="content-body">
-        <div class="content-heading-container">
-            <span class="content-heading">
-                <h1 class="heading">Welcome User</h1>
-            </span>
-        </div>
-        <div class="content-container">
-            <div class="content-container-heading">
-                <span class="spacial-audio-heading">
-                    <h3 class="h3-heading">Feel The Sound</h3>
-                </span>
-                <div class="spacial-audio-container">
-                    <span class="spacial-audio">
-                        <span class="spacial-audio-cover"></span>
-                    </span>
-                </div>
-            </div>
-            <div class="content-container">
-                <div class="content-container-heading">
-                    <span>
-                        <h3 class="h3-heading">Trending</h3>
-                    </span>
-                </div>
-                <div class="trending-list-container">
-                    <ul class="contents-list">
-                        <li class="sample"></li>
-                        <li class="sample"></li>
-                        <li class="sample"></li>
-                        <li class="sample"></li>
-                        <li class="sample"></li>
-                        <li class="sample"></li>
-                        <li class="sample"></li>
-                        <li class="sample"></li>
-                        <li class="sample"></li>
-                        <li class="sample"></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="content-container">
+        <div class="content">
+            <div class="login-container">
 
+            </div>
         </div>
-        <footer class="content-body-footer">
+        <footer id="content-body-footer" class="content-body-footer">
             <div class="footer-parts footer-info">
                 <div class="footer-part-1">
                     <div class="copyright-container">
@@ -113,4 +80,4 @@
         </footer>
     </div>
 </div>
-{%endblock%}
+{% endblock %}

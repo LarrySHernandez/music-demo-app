@@ -532,18 +532,22 @@ h1 {
         width: 100%;
         border-radius: 16px;
         overflow: hidden;
-        display: inline-block;
         /* background: linear-gradient(to right, red, yellow);
         animation: rot-gradient 5s linear infinite; */
     }
 
     .spacial-audio {
+        height: 300%;
         position: relative;
-        bottom: 50%;
-        height: 200%;
-        width: 100%;
+        bottom: 65%;
+        padding-left: 1000px;
+        padding-right: 1000px;
+        margin-left: -1000px;
+        margin-right: -1000px;
+        width: auto;
+        border-radius: 100%;
         background: linear-gradient(to right, red, yellow);
-        /* animation: rot-gradient 5s linear infinite; */
+        animation: rot-gradient 5s linear infinite;
     }
 
     @keyframes rot-gradient {
@@ -557,10 +561,16 @@ h1 {
     }
 
     .spacial-audio-cover {
-        height: 100%;
-        width: 100%;
+        position: relative;
+        bottom: 60px;
+        height: 200vw;
+        padding-left: 2000px;
+        padding-right: 2000px;
+        margin-left: -2000px;
+        margin-right: -2000px;
+        width: auto;
+        display: inline-block;
         background-color: rgba(53, 53, 53, 0.568);
-        border-radius: 16px;
         opacity: 0;
         transition: opacity .5s linear;
     }
@@ -625,6 +635,34 @@ h1 {
         top: 3px;
         height: 10px;
         border-right: 1px solid rgb(66, 66, 66);
+    }
+
+    .login-btn {
+        background-color: rgb(209, 0, 0);
+        border: none;
+        width: 87.5px;
+        height: 27.5px;
+        border-radius: 6px;
+        color: white;
+        font-weight: 700;
+        margin-right: 30px;
+        margin-left: 15px;
+    }
+
+    .upnext-btn {
+        background: none;
+        border: none;
+    }
+
+    .gray-screen {
+        bottom: .5px;
+        right: .5px;
+        position: absolute;
+        z-index: 1;
+        height: 200vh;
+        width: 200vw;
+        background-color: rgba(0, 0, 0, 0.411);
+        overflow: hidden;
     }
 }
 
